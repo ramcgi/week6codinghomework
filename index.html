@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="mocha"><p><a href="./index.html">Index</a></p></div>
+    <div id="messages"></div>
+    <div id="fixtures"></div>  
+    <script src="node_modules/chai/chai.js"></script> <!-- NOTE here is where I link my Chai.js -->
+    <script src="node_modules/mocha/mocha.js"></script> <!-- NOTE here is where I link my Mocha.js -->
+    <script src="./index.js"> </script> <!-- NOTE here is where I link my index.js -->
+    <script>mocha.setup('bdd')</script> <!-- NOTE here is where I set up my test -->
+    <script src="test.js"> </script> <!-- NOTE here is where I link my test file -->
+    <script>mocha.run();</script> <!-- NOTE here is where I run my test -->
+    
+</body>
+</html>
